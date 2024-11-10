@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    /* Basic Settings */
+
+    /* Language and Environment */
+    "target": "es2019",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "commonjs",                                 /* Specify what module code is generated. */
+
+    /* Output Directory Structure */
+    "rootDir": "./src",                                   /* Specify the root folder within your source files. */
+    "outDir": "./dist",                                   /* Redirect output structure to the directory. */
+
+    /* Incremental Compilation */
+    "incremental": true,                                  /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
+
+    /* Source Maps */
+    "sourceMap": true,                                    /* Create source map files for emitted JavaScript files. */
+
+    /* Module Resolution and Path Mapping */
+    "baseUrl": "./",                                      /* Base directory to resolve non-relative module names. */
+    "paths": {                                            /* A series of entries which re-map imports to additional lookup locations. */
+      "@utils/*": ["src/utils/*"],
+      "@models/*": ["src/models/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@services/*": ["src/services/*"]
+    },
+
+    /* Type Checking and Strictness */
+    "strict": true,                                       /* Enable all strict type-checking options. */
+    "noUnusedLocals": true,                               /* Report errors on unused locals. */
+    "noUnusedParameters": true,                           /* Report errors on unused parameters. */
+    "noImplicitReturns": true,                            /* Report error when not all code paths in function return a value. */
+    "noFallthroughCasesInSwitch": true,                   /* Report errors for fallthrough cases in switch statement. */
+
+    /* Compatibility and Interoperability */
+    "esModuleInterop": true,                              /* Emit additional JavaScript to ease support for importing CommonJS modules. */
+    "allowSyntheticDefaultImports": true,                 /* Allow default imports from modules with no default export. */
+    "resolveJsonModule": true,                            /* Enable importing .json files. */
+    "isolatedModules": true,                              /* Ensure that each file can be safely transpiled without relying on other imports. */
+    "skipLibCheck": true,                                 /* Skip type checking all declaration files. */
+
+    /* Advanced Features */
+    "downlevelIteration": true,                           /* Emit more compliant, but verbose and less performant JavaScript for iteration. */
+    "useDefineForClassFields": true,                      /* Emit ECMAScript-standard-compliant class fields. */
+
+    /* Debugging */
+    "inlineSources": true,                                /* Include source code in the sourcemaps inside the emitted JavaScript. */
+
+    /* Output Behavior */
+    "removeComments": false,                              /* Do not remove comments from the output. */
+    "preserveConstEnums": true,                           /* Disable erasing 'const enum' declarations in generated code. */
+
+    /* Performance */
+    "noEmitOnError": true,                                 /* Do not emit outputs if any type checking errors were reported. */
+     /* ... existing compilerOptions ... */
+     "typeRoots": ["./node_modules/@types", "./types"],
+     /* ... existing compilerOptions ... */
+  },
+  "include": ["src/**/*", "types/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
